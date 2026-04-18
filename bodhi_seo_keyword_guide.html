@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Keyword Guide — Bodhi Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1C31;--navy2:#122540;--gold:#C9A84C;--gold2:#E8C97A;
+  --cream:#F7F3EC;--cream2:#EDE7DB;--text:#1a1a2e;--muted:#6b7280;
+}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.6}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif}
+
+/* NAV */
+.nav{background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;position:sticky;top:0;z-index:200}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#fff;text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:13px;font-weight:500;transition:color 0.15s}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--gold);color:var(--navy)!important;padding:9px 20px;border-radius:3px;font-weight:600!important}
+
+/* PAGE HERO */
+.page-hero{background:var(--navy);padding:64px 48px 56px}
+.page-hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.page-hero h1{font-size:42px;font-weight:600;color:#fff;line-height:1.1;margin-bottom:14px}
+.page-hero h1 em{font-style:italic;color:var(--gold)}
+.page-hero-desc{font-size:15px;color:rgba(255,255,255,0.55);max-width:600px;line-height:1.75}
+.page-hero-note{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:3px;padding:10px 16px;font-size:12px;color:rgba(255,255,255,0.5)}
+.page-hero-note strong{color:var(--gold);font-weight:600}
+
+/* WRAPPER */
+.wrapper{max-width:1100px;margin:0 auto;padding:56px 48px 80px}
+
+/* INTRO BOX */
+.intro-box{background:#fff;border:1px solid var(--cream2);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:16px 20px;margin-bottom:40px;font-size:14px;color:#444;line-height:1.7}
+.intro-box strong{color:var(--navy);font-weight:600}
+
+/* SECTION LABEL */
+.section-label{font-size:11px;font-weight:600;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+.section-title{font-size:22px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.section-desc{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+
+/* KEYWORD GROUPS */
+.kw-group{margin-bottom:40px}
+.kw-group-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--cream2)}
+.kw-group-title{font-size:17px;font-weight:600;color:var(--navy)}
+.kw-badge{font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px}
+.badge-primary{background:#dcfce7;color:#166534}
+.badge-secondary{background:#dbeafe;color:#1e40af}
+.badge-longtail{background:#fef3c7;color:#92400e}
+.badge-avoid{background:#fee2e2;color:#991b1b}
+.kw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.kw-card{background:#fff;border:1px solid var(--cream2);border-radius:6px;padding:14px 16px;transition:border-color 0.15s}
+.kw-card:hover{border-color:var(--gold)}
+.kw-term{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px;line-height:1.4}
+.kw-meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.kw-intent{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;text-transform:uppercase;letter-spacing:0.5px}
+.intent-buy{background:#dcfce7;color:#166534}
+.intent-info{background:#dbeafe;color:#1e40af}
+.intent-local{background:#fef9c3;color:#854d0e}
+.kw-diff{font-size:11px;color:var(--muted)}
+.kw-tip{font-size:11px;color:#555;margin-top:6px;line-height:1.4;font-style:italic}
+
+/* DIVIDER */
+.divider{height:1px;background:var(--cream2);margin:36px 0}
+
+/* PLACEMENT TABLE */
+.table-wrapper{overflow-x:auto;margin:16px 0 32px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:500;font-size:12px;letter-spacing:0.3px;white-space:nowrap}
+tbody td{padding:12px 16px;border-bottom:1px solid var(--cream2);vertical-align:top;line-height:1.55}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#fff}
+tbody td:first-child{font-weight:600;color:var(--navy);width:22%}
+tbody td:nth-child(2){color:#333;width:44%}
+tbody td:nth-child(3){color:var(--muted);font-size:12px}
+
+/* QUICK WINS */
+.wins-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.win-card{background:#fff;border:1px solid var(--cream2);border-radius:6px;padding:20px 22px}
+.win-num{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--cream2);line-height:1;margin-bottom:8px}
+.win-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.win-desc{font-size:13px;color:#555;line-height:1.6}
+.win-action{display:inline-block;margin-top:10px;font-size:12px;color:var(--gold);font-weight:600}
+
+/* AVOID PILLS */
+.avoid-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.avoid-pill{font-size:13px;background:#fff;border:1px solid #fecaca;color:#991b1b;padding:6px 14px;border-radius:20px;text-decoration:line-through;opacity:0.75}
+
+/* META TAG EXAMPLES */
+.code-block{background:var(--navy);border-radius:6px;padding:20px 24px;margin:16px 0;overflow-x:auto}
+.code-block code{font-family:'Courier New',monospace;font-size:12px;color:#e2e8f0;line-height:1.8;white-space:pre}
+.code-block .tag{color:var(--gold)}
+.code-block .attr{color:#93c5fd}
+.code-block .val{color:#86efac}
+
+/* BLOG TITLE IDEAS */
+.blog-ideas{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.blog-idea{background:#fff;border:1px solid var(--cream2);border-radius:6px;padding:14px 18px;display:flex;align-items:flex-start;gap:14px}
+.blog-idea-tag{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.bt-easy{background:#dcfce7;color:#166534}
+.bt-medium{background:#fef3c7;color:#92400e}
+.bt-hard{background:#fee2e2;color:#991b1b}
+.blog-idea-content{}
+.blog-idea-title{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.blog-idea-keyword{font-size:12px;color:var(--muted)}
+
+/* FOOTER */
+.footer{background:#060f1c;padding:32px 48px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.2)}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff}
+.footer-brand span{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav-logo" href="index.html">bodhi<span>.</span>consulting</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bodhi_case_studies.html">Case Studies</a></li>
+    <li><a href="bodhi_article_offshore_cost.html">Insights</a></li>
+    <li><a href="index.html" class="nav-cta">Book a Call</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Internal reference · Not for publishing</div>
+  <h1>SEO Keyword Guide<br/><em>Bodhi Consulting</em></h1>
+  <p class="page-hero-desc">The keywords your buyers are typing into Google — organised by priority, intent, and difficulty. Use this guide when writing website copy, blog articles, and meta tags.</p>
+  <div class="page-hero-note"><strong>Internal use only</strong> — this file is a reference guide for Bharat and the web developer. Do not publish this page publicly.</div>
+</div>
+
+<div class="wrapper">
+
+  <div class="intro-box">
+    <strong>How to use this guide:</strong> Keywords are grouped into three tiers. <strong>Primary keywords</strong> should appear in page titles, H1 headings, and meta descriptions. <strong>Secondary keywords</strong> belong in body copy and blog articles. <strong>Long-tail keywords</strong> are the easiest to rank for and convert best — each one should ideally be the target of its own dedicated blog article. Difficulty ratings are approximate for a boutique firm with a new domain.
+  </div>
+
+  <!-- PRIMARY KEYWORDS -->
+  <div class="kw-group">
+    <div class="kw-group-header">
+      <div class="kw-group-title">Primary keywords</div>
+      <span class="kw-badge badge-primary">Use on homepage + service pages</span>
+    </div>
+    <div class="kw-grid">
+      <div class="kw-card">
+        <div class="kw-term">IT program management consulting Sydney</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: medium</span></div>
+        <div class="kw-tip">Primary target — use in homepage title tag and H1</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">program management consultant Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: medium</span></div>
+        <div class="kw-tip">Use in homepage meta description and hero paragraph</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">offshore software development team Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: medium</span></div>
+        <div class="kw-tip">Use as H1 on the Offshore Development service page</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">technology transformation consulting financial services</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: medium-high</span></div>
+        <div class="kw-tip">Use in the Strategy & Transformation service page title</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">IT project delivery consultant Sydney</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: low-medium</span></div>
+        <div class="kw-tip">Good for Google Business Profile description</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">offshore dedicated development team Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: low</span></div>
+        <div class="kw-tip">Weave into offshore service page body copy</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">banking technology transformation Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: low</span></div>
+        <div class="kw-tip">Use in case studies page title and intro</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">PMO consultant Sydney</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: low</span></div>
+        <div class="kw-tip">Use as H1 on a dedicated PMO service page</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECONDARY KEYWORDS -->
+  <div class="kw-group">
+    <div class="kw-group-header">
+      <div class="kw-group-title">Secondary keywords</div>
+      <span class="kw-badge badge-secondary">Use in blog articles + about page</span>
+    </div>
+    <div class="kw-grid">
+      <div class="kw-card">
+        <div class="kw-term">digital transformation financial services Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-info">Research</span><span class="kw-diff">Difficulty: high</span></div>
+        <div class="kw-tip">Mention naturally in articles — too broad to target directly</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">IT governance framework financial services</div>
+        <div class="kw-meta"><span class="kw-intent intent-info">Research</span><span class="kw-diff">Difficulty: medium</span></div>
+        <div class="kw-tip">Target with a dedicated governance article</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">staff augmentation Australia IT</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: medium</span></div>
+        <div class="kw-tip">Add to offshore service page as a secondary keyword</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">program recovery consultant</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: low</span></div>
+        <div class="kw-tip">High intent — people searching this have an urgent problem</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">fintech program management</div>
+        <div class="kw-meta"><span class="kw-intent intent-info">Research</span><span class="kw-diff">Difficulty: medium</span></div>
+        <div class="kw-tip">Use in fintech-specific case study and blog content</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">technology outsourcing company Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: medium</span></div>
+        <div class="kw-tip">Use in offshore page and footer</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">business change management consulting</div>
+        <div class="kw-meta"><span class="kw-intent intent-info">Research</span><span class="kw-diff">Difficulty: medium-high</span></div>
+        <div class="kw-tip">Include in Strategy & Transformation service page</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">IT strategy consulting Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: medium-high</span></div>
+        <div class="kw-tip">Use in About page and founder bio</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LONG-TAIL KEYWORDS -->
+  <div class="kw-group">
+    <div class="kw-group-header">
+      <div class="kw-group-title">Long-tail &amp; local keywords</div>
+      <span class="kw-badge badge-longtail">Easiest to rank — write one article per keyword</span>
+    </div>
+    <div class="kw-grid">
+      <div class="kw-card">
+        <div class="kw-term">offshore development team for fintech Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: very low</span></div>
+        <div class="kw-tip">Already covered in the offshore cost article — reinforce with a dedicated page</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">IT program manager for hire Sydney</div>
+        <div class="kw-meta"><span class="kw-intent intent-local">Local</span><span class="kw-diff">Difficulty: very low</span></div>
+        <div class="kw-tip">Excellent Google Business Profile keyword</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">failed IT project rescue Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-buy">Buyer intent</span><span class="kw-diff">Difficulty: very low</span></div>
+        <div class="kw-tip">Highly urgent search — write a dedicated article targeting this</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">PMO setup financial services Sydney</div>
+        <div class="kw-meta"><span class="kw-intent intent-local">Local</span><span class="kw-diff">Difficulty: very low</span></div>
+        <div class="kw-tip">Target with a PMO-specific service page or article</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">cost of offshore developers vs Australia</div>
+        <div class="kw-meta"><span class="kw-intent intent-info">Research</span><span class="kw-diff">Difficulty: low</span></div>
+        <div class="kw-tip">Already written — this is the target of Article 1</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">how to manage offshore development team</div>
+        <div class="kw-meta"><span class="kw-intent intent-info">Research</span><span class="kw-diff">Difficulty: low</span></div>
+        <div class="kw-tip">Write as Article 3 — strong buyer research intent</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">banking transformation program director Sydney</div>
+        <div class="kw-meta"><span class="kw-intent intent-local">Local</span><span class="kw-diff">Difficulty: very low</span></div>
+        <div class="kw-tip">Use in founder bio and About page copy</div>
+      </div>
+      <div class="kw-card">
+        <div class="kw-term">IT project governance framework banking</div>
+        <div class="kw-meta"><span class="kw-intent intent-info">Research</span><span class="kw-diff">Difficulty: low</span></div>
+        <div class="kw-tip">Write as Article 2 — governance article already planned</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PLACEMENT TABLE -->
+  <div class="section-label">Where to place keywords</div>
+  <div class="section-title">Keyword placement by page element</div>
+  <p class="section-desc">SEO weight is not equal across all page elements. This table shows where each keyword has the most impact.</p>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Page element</th>
+          <th>Best keywords to use</th>
+          <th>Why it matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;title&gt; tag</td>
+          <td>IT program management consulting Sydney · PMO consultant Sydney</td>
+          <td>Highest SEO weight — Google reads this first. Already updated on homepage.</td>
+        </tr>
+        <tr>
+          <td>Homepage H1</td>
+          <td>program delivery · financial services · technology transformation</td>
+          <td>Second highest weight — must sound natural, not keyword-stuffed.</td>
+        </tr>
+        <tr>
+          <td>Hero description</td>
+          <td>IT program management · offshore development · Sydney · financial services</td>
+          <td>Reinforces H1 keywords. Already present in current homepage copy.</td>
+        </tr>
+        <tr>
+          <td>Service page H1s</td>
+          <td>One primary keyword per page — e.g. "Offshore software development team Australia"</td>
+          <td>Each service page should own its keyword — don't compete with homepage.</td>
+        </tr>
+        <tr>
+          <td>Meta descriptions</td>
+          <td>IT program management consulting Sydney · technology transformation · financial services</td>
+          <td>Shown in Google results — affects click-through rate, not ranking directly.</td>
+        </tr>
+        <tr>
+          <td>Blog article titles</td>
+          <td>Long-tail phrases — e.g. "cost of offshore developers vs Australia 2025"</td>
+          <td>Long-tail articles rank faster and attract buyers at the research stage.</td>
+        </tr>
+        <tr>
+          <td>Image alt text</td>
+          <td>program management consultant Sydney · IT consulting financial services</td>
+          <td>Often ignored. Small effort, free SEO gain. Add to all images on the site.</td>
+        </tr>
+        <tr>
+          <td>Footer &amp; contact page</td>
+          <td>Sydney · New South Wales · Australia</td>
+          <td>Helps Google confirm local relevance for Sydney-based searches.</td>
+        </tr>
+        <tr>
+          <td>Google Business Profile</td>
+          <td>IT program management · PMO consultant · offshore development · Sydney</td>
+          <td>Free listing. Appears in map results. Currently no competition at this spot.</td>
+        </tr>
+        <tr>
+          <td>LinkedIn headline (Bharat)</td>
+          <td>IT Program Management · Financial Services · Offshore Development · Sydney</td>
+          <td>LinkedIn ranks in Google. Bharat's profile is a high-authority backlink to the site.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- QUICK WINS -->
+  <div class="section-label">Do these first</div>
+  <div class="section-title">4 quick SEO wins — under 30 minutes each</div>
+  <div class="wins-grid">
+    <div class="win-card">
+      <div class="win-num">01</div>
+      <div class="win-title">Fix the &lt;title&gt; tag ✅ Done</div>
+      <div class="win-desc">Already updated on the homepage to "IT Program Management Consulting Sydney | Bodhi Consulting". The same needs doing on each service page when they're built.</div>
+      <span class="win-action">Status: Complete</span>
+    </div>
+    <div class="win-card">
+      <div class="win-num">02</div>
+      <div class="win-title">Add meta descriptions ✅ Done</div>
+      <div class="win-desc">Meta descriptions added to homepage and case studies page. Each new page built going forward needs its own unique meta description of 150–160 characters.</div>
+      <span class="win-action">Status: Complete on existing pages</span>
+    </div>
+    <div class="win-card">
+      <div class="win-num">03</div>
+      <div class="win-title">Create a Google Business Profile</div>
+      <div class="win-desc">Free. Takes 15 minutes at business.google.com. A verified Sydney listing for "Bodhi Consulting" means the firm appears in map results when people search for IT consultants in Sydney. Currently zero competition at that spot.</div>
+      <span class="win-action">→ Do this at business.google.com</span>
+    </div>
+    <div class="win-card">
+      <div class="win-num">04</div>
+      <div class="win-title">Publish the offshore cost article ✅ Done</div>
+      <div class="win-desc">"The Real Cost of Offshore vs In-House Developers in Australia (2025)" is written and ready. Publish it to the Insights section as soon as the site goes live — this is the fastest path to organic traffic.</div>
+      <span class="win-action">Status: Written — ready to publish</span>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BLOG ARTICLE IDEAS -->
+  <div class="section-label">Content plan</div>
+  <div class="section-title">SEO article ideas — one keyword per article</div>
+  <p class="section-desc">Each article below targets a specific long-tail keyword with low competition. Writing one per month builds a compounding SEO asset over time.</p>
+
+  <div class="blog-ideas">
+    <div class="blog-idea">
+      <span class="blog-idea-tag bt-easy">Written ✅</span>
+      <div class="blog-idea-content">
+        <div class="blog-idea-title">The Real Cost of Offshore vs In-House Developers in Australia (2025)</div>
+        <div class="blog-idea-keyword">Target keyword: "cost of offshore developers vs Australia" · Difficulty: low</div>
+      </div>
+    </div>
+    <div class="blog-idea">
+      <span class="blog-idea-tag bt-easy">Write next</span>
+      <div class="blog-idea-content">
+        <div class="blog-idea-title">5 Warning Signs Your IT Project Needs a Dedicated Program Manager</div>
+        <div class="blog-idea-keyword">Target keyword: "IT project needs program manager" · Difficulty: very low</div>
+      </div>
+    </div>
+    <div class="blog-idea">
+      <span class="blog-idea-tag bt-easy">Write next</span>
+      <div class="blog-idea-content">
+        <div class="blog-idea-title">How to Set Up IT Program Governance That Actually Works in Financial Services</div>
+        <div class="blog-idea-keyword">Target keyword: "IT project governance framework banking" · Difficulty: low</div>
+      </div>
+    </div>
+    <div class="blog-idea">
+      <span class="blog-idea-tag bt-medium">Month 2</span>
+      <div class="blog-idea-content">
+        <div class="blog-idea-title">How to Rescue a Failed IT Program: A Step-by-Step Recovery Framework</div>
+        <div class="blog-idea-keyword">Target keyword: "failed IT project rescue Australia" · Difficulty: very low · High intent</div>
+      </div>
+    </div>
+    <div class="blog-idea">
+      <span class="blog-idea-tag bt-medium">Month 2</span>
+      <div class="blog-idea-content">
+        <div class="blog-idea-title">What Is a PMO and Does Your Financial Services Firm Need One?</div>
+        <div class="blog-idea-keyword">Target keyword: "PMO setup financial services Sydney" · Difficulty: very low</div>
+      </div>
+    </div>
+    <div class="blog-idea">
+      <span class="blog-idea-tag bt-medium">Month 3</span>
+      <div class="blog-idea-content">
+        <div class="blog-idea-title">How to Manage an Offshore Development Team: A Practical Guide for Australian Businesses</div>
+        <div class="blog-idea-keyword">Target keyword: "how to manage offshore development team" · Difficulty: low</div>
+      </div>
+    </div>
+    <div class="blog-idea">
+      <span class="blog-idea-tag bt-hard">Month 4+</span>
+      <div class="blog-idea-content">
+        <div class="blog-idea-title">Digital Transformation in Australian Banking: What's Working and What Isn't in 2025</div>
+        <div class="blog-idea-keyword">Target keyword: "digital transformation financial services Australia" · Difficulty: high — but high authority</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- AVOID SECTION -->
+  <div class="section-label">Keywords to avoid</div>
+  <div class="section-title">Too broad to rank for — use the specific versions above instead</div>
+  <p class="section-desc">These generic terms have thousands of established competitors. Targeting them wastes effort and budget.</p>
+  <div class="avoid-grid">
+    <span class="avoid-pill">IT consulting</span>
+    <span class="avoid-pill">digital transformation</span>
+    <span class="avoid-pill">project management</span>
+    <span class="avoid-pill">business consulting</span>
+    <span class="avoid-pill">technology consulting</span>
+    <span class="avoid-pill">software development</span>
+    <span class="avoid-pill">consulting services</span>
+    <span class="avoid-pill">management consulting</span>
+    <span class="avoid-pill">IT services</span>
+    <span class="avoid-pill">outsourcing</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- META TAG EXAMPLES -->
+  <div class="section-label">Ready-to-use copy</div>
+  <div class="section-title">Meta tags for each page — copy these into your CMS</div>
+  <p class="section-desc">Paste these directly into Wix, Webflow, or your developer's code when building out the site pages.</p>
+
+  <div class="code-block"><code><span class="tag">&lt;!-- HOMEPAGE --&gt;</span>
+<span class="tag">&lt;title&gt;</span><span class="val">IT Program Management Consulting Sydney | Bodhi Consulting</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="val">"description"</span> <span class="attr">content</span>=<span class="val">"Bodhi Consulting delivers IT program management, offshore development and technology transformation for financial services businesses in Sydney and Australia. 25+ years experience. Book a free discovery call."</span><span class="tag">/&gt;</span>
+
+<span class="tag">&lt;!-- CASE STUDIES PAGE --&gt;</span>
+<span class="tag">&lt;title&gt;</span><span class="val">Case Studies — IT Program Delivery & Banking Transformation | Bodhi Consulting</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="val">"description"</span> <span class="attr">content</span>=<span class="val">"Real program delivery outcomes — $150M banking transformation, global FX modernisation, offshore fintech team delivery. See how Bodhi Consulting delivers."</span><span class="tag">/&gt;</span>
+
+<span class="tag">&lt;!-- OFFSHORE SERVICE PAGE (when built) --&gt;</span>
+<span class="tag">&lt;title&gt;</span><span class="val">Offshore Software Development Team Australia | Bodhi Consulting</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="val">"description"</span> <span class="attr">content</span>=<span class="val">"Build a dedicated offshore development team with Bodhi Consulting. Senior engineers, full governance, 40-60% cost reduction vs Australian hiring. Sydney-based management."</span><span class="tag">/&gt;</span>
+
+<span class="tag">&lt;!-- PMO SERVICE PAGE (when built) --&gt;</span>
+<span class="tag">&lt;title&gt;</span><span class="val">PMO Consultant Sydney — Program Governance & Delivery | Bodhi Consulting</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="val">"description"</span> <span class="attr">content</span>=<span class="val">"PMO setup, program governance and IT delivery management for financial services businesses in Sydney. Senior-led, commercially accountable. Book a free discovery call."</span><span class="tag">/&gt;</span>
+
+<span class="tag">&lt;!-- INSIGHTS / BLOG INDEX --&gt;</span>
+<span class="tag">&lt;title&gt;</span><span class="val">Insights — IT Program Management & Offshore Development | Bodhi Consulting</span><span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="val">"description"</span> <span class="attr">content</span>=<span class="val">"Practical articles for technology leaders — IT governance, offshore development costs, program recovery, and financial services transformation. Written from 37+ real programs."</span><span class="tag">/&gt;</span></code></div>
+
+</div><!-- /wrapper -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-bottom">
+    <div class="footer-brand">bodhi<span>.</span>consulting</div>
+    <span class="footer-copy">Internal reference document — © 2025 Bodhi Consulting Pty Ltd</span>
+    <span class="footer-copy">Not for public distribution</span>
+  </div>
+</footer>
+
+</body>
+</html>

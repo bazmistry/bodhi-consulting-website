@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies — IT Program Delivery & Banking Transformation | Bodhi Consulting</title>
+<meta name="description" content="Real program delivery outcomes from Bodhi Consulting — including a $150M banking transformation and global FX modernisation for Australia's largest retail bank. IT program management and offshore development case studies.">
+<meta property="og:title" content="Case Studies — IT Program Delivery & Banking Transformation | Bodhi Consulting">
+<meta property="og:description" content="Real outcomes: $150M banking transformation, global FX modernisation, offshore fintech team delivery. See how Bodhi Consulting delivers.">
+<meta property="og:url" content="https://www.bodhiprojects.com/case-studies">
+<link rel="canonical" href="https://www.bodhiprojects.com/case-studies">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1C31;--navy2:#122540;--gold:#C9A84C;--gold2:#E8C97A;
+  --cream:#F7F3EC;--cream2:#EDE7DB;--text:#1a1a2e;--muted:#6b7280;
+}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.6}
+h1,h2,h3,h4,h5{font-family:'Cormorant Garamond',Georgia,serif}
+
+/* NAV */
+.nav{background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;position:sticky;top:0;z-index:200}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#fff;text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:13px;font-weight:500;transition:color 0.15s}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:#fff}
+.nav-cta{background:var(--gold);color:var(--navy)!important;padding:9px 20px;border-radius:3px;font-weight:600!important}
+
+/* PAGE HERO */
+.page-hero{background:var(--navy);padding:72px 48px 64px}
+.page-hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.page-hero h1{font-size:48px;font-weight:600;color:#fff;line-height:1.1;margin-bottom:16px;max-width:600px}
+.page-hero h1 em{font-style:italic;color:var(--gold)}
+.page-hero-desc{font-size:15px;color:rgba(255,255,255,0.55);max-width:540px;line-height:1.75}
+.page-hero-note{display:inline-flex;align-items:center;gap:8px;margin-top:24px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:3px;padding:10px 16px;font-size:12px;color:rgba(255,255,255,0.4)}
+.page-hero-note strong{color:rgba(255,255,255,0.7);font-weight:500}
+
+/* FILTER BAR */
+.filter-bar{background:#fff;padding:0 48px;border-bottom:1px solid var(--cream2);display:flex;gap:0}
+.filter-btn{background:none;border:none;border-bottom:2px solid transparent;padding:16px 20px;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;font-family:'Outfit',sans-serif;transition:color 0.15s,border-color 0.15s;white-space:nowrap}
+.filter-btn:hover{color:var(--navy)}
+.filter-btn.active{color:var(--navy);border-bottom-color:var(--gold)}
+
+/* CASE STUDIES LIST */
+.cases-wrapper{padding:56px 48px;display:flex;flex-direction:column;gap:0}
+
+/* CASE STUDY CARD — full-width editorial layout */
+.case-card{background:#fff;border:1px solid var(--cream2);border-radius:8px;overflow:hidden;margin-bottom:24px;transition:border-color 0.2s}
+.case-card:hover{border-color:var(--gold)}
+
+.case-header{display:grid;grid-template-columns:1fr auto;gap:24px;padding:36px 40px 28px;border-bottom:1px solid var(--cream2);align-items:start}
+.case-tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.case-tag{font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 10px;border-radius:2px}
+.ct-sector{background:rgba(11,28,49,0.07);color:var(--navy)}
+.ct-service{background:rgba(201,168,76,0.12);color:#7a5c1a}
+.ct-outcome{background:rgba(34,197,94,0.1);color:#166534}
+.case-title{font-size:26px;font-weight:600;color:var(--navy);line-height:1.2;margin-bottom:8px}
+.case-subtitle{font-size:14px;color:var(--muted);line-height:1.6}
+.case-metrics{display:flex;flex-direction:column;gap:10px;min-width:180px}
+.case-metric{text-align:right}
+.case-metric-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--navy);line-height:1}
+.case-metric-val span{color:var(--gold)}
+.case-metric-label{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* CASE BODY — 3-col narrative */
+.case-body{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}
+.case-col{padding:28px 32px;border-right:1px solid var(--cream2)}
+.case-col:last-child{border-right:none}
+.case-col-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.case-col h4{font-size:17px;font-weight:600;color:var(--navy);margin-bottom:10px;line-height:1.3}
+.case-col p{font-size:13px;color:#444;line-height:1.7}
+.case-col ul{font-size:13px;color:#444;line-height:1.7;list-style:none;padding:0}
+.case-col ul li{padding-left:14px;position:relative;margin-bottom:6px}
+.case-col ul li::before{content:'—';position:absolute;left:0;color:var(--gold);opacity:0.7}
+
+/* CASE RESULTS BAR */
+.case-results{background:var(--navy);padding:24px 40px;display:flex;gap:0}
+.case-result{flex:1;text-align:center;border-right:1px solid rgba(255,255,255,0.08);padding:0 20px}
+.case-result:last-child{border-right:none}
+.cr-val{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:var(--gold);line-height:1}
+.cr-label{font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px}
+
+/* CASE QUOTE */
+.case-quote{padding:28px 40px;background:var(--cream);border-top:1px solid var(--cream2);display:flex;gap:20px;align-items:flex-start}
+.case-quote-mark{font-family:'Cormorant Garamond',serif;font-size:48px;line-height:0.7;color:var(--gold);opacity:0.3;flex-shrink:0;margin-top:4px}
+.case-quote-body{font-family:'Cormorant Garamond',serif;font-size:16px;font-style:italic;color:#333;line-height:1.6;margin-bottom:8px}
+.case-quote-attr{font-size:12px;color:var(--muted)}
+.case-quote-attr strong{color:var(--text);font-weight:500;display:block}
+.case-quote-placeholder{font-size:11px;color:rgba(201,168,76,0.6);border:1px dashed rgba(201,168,76,0.35);border-radius:3px;padding:3px 10px;display:inline-block;margin-top:6px}
+
+/* CASE EXPAND TOGGLE */
+.case-toggle{padding:16px 40px;border-top:1px solid var(--cream2);display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:#fff;transition:background 0.15s}
+.case-toggle:hover{background:var(--cream)}
+.case-toggle-label{font-size:13px;color:var(--gold);font-weight:600}
+.case-toggle-icon{font-size:18px;color:var(--gold);transition:transform 0.2s}
+.case-toggle-icon.open{transform:rotate(180deg)}
+
+/* EXPANDED DETAIL */
+.case-detail{display:none;padding:32px 40px;border-top:1px solid var(--cream2);background:#fdfbf7}
+.case-detail.open{display:block}
+.case-detail h5{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.case-detail p{font-size:13px;color:#444;line-height:1.75;margin-bottom:16px}
+.case-detail ul{font-size:13px;color:#444;line-height:1.7;margin-bottom:16px;padding-left:0;list-style:none}
+.case-detail ul li{padding-left:16px;position:relative;margin-bottom:7px}
+.case-detail ul li::before{content:'✦';position:absolute;left:0;color:var(--gold);font-size:9px;top:3px}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+
+/* MINI CASE CARDS (bottom 2) */
+.mini-cases{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:0}
+.mini-card{background:#fff;border:1px solid var(--cream2);border-radius:8px;overflow:hidden;transition:border-color 0.2s}
+.mini-card:hover{border-color:var(--gold)}
+.mini-header{padding:24px 28px 18px;border-bottom:1px solid var(--cream2)}
+.mini-tag-row{display:flex;gap:6px;margin-bottom:10px}
+.mini-title{font-size:19px;font-weight:600;color:var(--navy);line-height:1.25;margin-bottom:6px}
+.mini-subtitle{font-size:13px;color:var(--muted)}
+.mini-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.mini-col{padding:18px 24px;border-right:1px solid var(--cream2)}
+.mini-col:last-child{border-right:none}
+.mini-col-label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.mini-col p{font-size:12px;color:#444;line-height:1.65}
+.mini-results{background:var(--navy);padding:16px 24px;display:flex;gap:0}
+.mini-result{flex:1;text-align:center;border-right:1px solid rgba(255,255,255,0.08);padding:0 12px}
+.mini-result:last-child{border-right:none}
+.mr-val{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--gold)}
+.mr-label{font-size:10px;color:rgba(255,255,255,0.4);margin-top:2px}
+
+/* SECTION DIVIDER */
+.section-heading{padding:0 0 20px}
+.sh-label{font-size:11px;font-weight:600;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px}
+.sh-title{font-size:22px;font-weight:600;color:var(--navy)}
+
+/* CTA */
+.cta-strip{background:var(--navy);padding:64px 48px;text-align:center}
+.cta-strip h2{font-size:36px;font-weight:600;color:#fff;margin-bottom:10px}
+.cta-strip p{font-size:15px;color:rgba(255,255,255,0.5);margin-bottom:28px}
+.btn-gold{background:var(--gold);color:var(--navy);border:none;padding:14px 32px;font-size:14px;font-weight:600;border-radius:3px;cursor:pointer;font-family:'Outfit',sans-serif}
+.btn-gold:hover{background:var(--gold2)}
+.btn-outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.2);padding:13px 24px;font-size:14px;border-radius:3px;cursor:pointer;font-family:'Outfit',sans-serif;margin-left:10px}
+.cta-sub{font-size:12px;color:rgba(255,255,255,0.25);margin-top:14px}
+
+/* FOOTER */
+.footer{background:#060f1c;padding:48px 48px 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.footer-brand-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:10px}
+.footer-brand-name span{color:var(--gold)}
+.footer-brand-desc{font-size:12px;color:rgba(255,255,255,0.3);line-height:1.7;margin-bottom:20px}
+.footer-contact a{display:block;font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;margin-bottom:6px}
+.footer-col-title{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:16px}
+.footer-link{display:block;font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;margin-bottom:9px}
+.footer-link:hover{color:#fff}
+.footer-bottom{padding:20px 0;display:flex;justify-content:space-between}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.2)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav-logo" href="index.html">bodhi<span>.</span>consulting</a>
+  <ul class="nav-links">
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Who we help</a></li>
+    <li><a href="bodhi_case_studies.html" class="active">Case studies</a></li>
+    <li><a href="#">Insights</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#" class="nav-cta">Book a Call</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Client work</div>
+  <h1>Programs delivered.<br/><em>Results that speak.</em></h1>
+  <p class="page-hero-desc">Every engagement below is drawn from real programs led by Bharat Mistry. Clients are anonymised by agreement — the outcomes are not.</p>
+  <div class="page-hero-note">
+    <strong>Note to Bharat:</strong> Replace placeholder quotes with real client words — even one genuine testimonial will significantly increase conversion from this page.
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterCases('all', this)">All work</button>
+  <button class="filter-btn" onclick="filterCases('program', this)">Program Management</button>
+  <button class="filter-btn" onclick="filterCases('offshore', this)">Offshore Development</button>
+  <button class="filter-btn" onclick="filterCases('transformation', this)">Transformation</button>
+  <button class="filter-btn" onclick="filterCases('banking', this)">Banking</button>
+  <button class="filter-btn" onclick="filterCases('fintech', this)">Fintech</button>
+</div>
+
+<div class="cases-wrapper">
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CASE STUDY 1: FX Modernisation             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="case-card" data-tags="program transformation banking">
+    <div class="case-header">
+      <div>
+        <div class="case-tag-row">
+          <span class="case-tag ct-sector">Retail Banking</span>
+          <span class="case-tag ct-service">Program Management</span>
+          <span class="case-tag ct-service">Technology Transformation</span>
+          <span class="case-tag ct-outcome">Delivered on time &amp; budget</span>
+        </div>
+        <div class="case-title">Global FX Platform Modernisation</div>
+        <div class="case-subtitle">Replacing a 20-year-old foreign exchange trading platform across three international markets — without disrupting a $2B daily trading operation.</div>
+      </div>
+      <div class="case-metrics">
+        <div class="case-metric">
+          <div class="case-metric-val">$80M<span>+</span></div>
+          <div class="case-metric-label">Program value</div>
+        </div>
+        <div class="case-metric" style="margin-top:4px">
+          <div class="case-metric-val">18<span>mo</span></div>
+          <div class="case-metric-label">Delivery duration</div>
+        </div>
+        <div class="case-metric" style="margin-top:4px">
+          <div class="case-metric-val">3</div>
+          <div class="case-metric-label">Markets: AU · UK · US</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-body">
+      <div class="case-col">
+        <div class="case-col-label">The challenge</div>
+        <h4>A mission-critical platform well past its replacement date</h4>
+        <p>Australia's largest retail bank had been running its FX trading infrastructure on a legacy platform built in the early 2000s. Three prior replacement attempts had failed — each time running over budget, losing executive sponsorship, or stalling at system integration. The business was carrying significant operational and regulatory risk, and a fourth failed attempt was not an option.</p>
+        <p style="margin-top:10px">When Bharat was brought in, the program had no single accountable delivery lead, conflicting vendor timelines, and a steering committee that had lost confidence in the program's direction.</p>
+      </div>
+      <div class="case-col">
+        <div class="case-col-label">Our approach</div>
+        <h4>Governance first, delivery second</h4>
+        <p>The first 30 days were spent not on technology — but on accountability. Bharat restructured the program governance from the ground up: clear RACI, weekly steering cadence, a single source of truth for scope and risk, and vendor contracts re-baselined against realistic timelines.</p>
+        <ul style="margin-top:10px">
+          <li>Established a consolidated program office across AU, UK and US workstreams</li>
+          <li>Re-negotiated vendor delivery schedules to reflect actual system complexity</li>
+          <li>Built a parallel-run testing framework to de-risk cutover from day one</li>
+          <li>Created a real-time risk dashboard visible to the full steering committee</li>
+          <li>Managed a cross-functional team of 60+ across technology, operations and compliance</li>
+        </ul>
+      </div>
+      <div class="case-col">
+        <div class="case-col-label">The outcome</div>
+        <h4>Full platform replacement — zero trading downtime</h4>
+        <p>The new FX platform was delivered across all three markets on the agreed timeline and within the approved budget — the first successful technology replacement of its kind for this institution in over a decade.</p>
+        <p style="margin-top:10px">The governance framework put in place during the program was adopted as the institutional standard for subsequent technology programs. Three years on, the platform continues to operate without material incident.</p>
+      </div>
+    </div>
+
+    <div class="case-results">
+      <div class="case-result"><div class="cr-val">On time</div><div class="cr-label">All 3 market go-lives</div></div>
+      <div class="case-result"><div class="cr-val">0</div><div class="cr-label">Trading hours lost during cutover</div></div>
+      <div class="case-result"><div class="cr-val">60<span style="font-size:18px">+</span></div><div class="cr-label">FTEs coordinated</div></div>
+      <div class="case-result"><div class="cr-val">3<span style="font-size:18px">yrs</span></div><div class="cr-label">Governance framework still in use</div></div>
+    </div>
+
+    <div class="case-quote">
+      <div class="case-quote-mark">"</div>
+      <div>
+        <p class="case-quote-body">What Bharat did in the first 30 days — just bringing clarity to who was responsible for what — was more valuable than the previous 12 months of work. The program felt completely different from that point forward.</p>
+        <div class="case-quote-attr">
+          <strong>Chief Technology Officer</strong>
+          Leading Australian retail bank · Sydney
+        </div>
+        <span class="case-quote-placeholder">⚠ Replace with verified client quote</span>
+      </div>
+    </div>
+
+    <div class="case-toggle" onclick="toggleDetail('cs1')">
+      <span class="case-toggle-label">Read full delivery detail</span>
+      <span class="case-toggle-icon" id="cs1-icon">▾</span>
+    </div>
+    <div class="case-detail" id="cs1-detail">
+      <div class="detail-grid">
+        <div>
+          <h5>Why three previous attempts failed</h5>
+          <p>Each prior attempt shared the same failure pattern: strong initial ambition, weak governance structure, and a collapse in accountability when the first integration issues emerged. Vendor contracts lacked clear acceptance criteria, which meant disputes over scope became the norm rather than the exception. There was no single person whose job it was to hold the whole program together.</p>
+          <h5 style="margin-top:20px">How the governance model was rebuilt</h5>
+          <ul>
+            <li>Single program director (Bharat) with full accountability across all workstreams</li>
+            <li>Weekly steering committee with standardised status reporting — no narrative, just RAG and actions</li>
+            <li>Vendor performance scorecards tied to payment milestones</li>
+            <li>Dedicated change control process to prevent scope creep from embedding silently</li>
+            <li>Escalation paths defined before they were needed — not after</li>
+          </ul>
+        </div>
+        <div>
+          <h5>The cutover approach</h5>
+          <p>Given the zero-downtime requirement, the cutover strategy ran as a parallel operation for 90 days — live trades processed on both legacy and new platforms simultaneously, with automated reconciliation to validate integrity. This approach added upfront complexity but removed the risk of a hard cutover that had derailed previous attempts.</p>
+          <h5 style="margin-top:20px">What the client inherited</h5>
+          <ul>
+            <li>A fully documented governance framework adopted as institutional standard</li>
+            <li>A retrained internal delivery team capable of running similar programs independently</li>
+            <li>Vendor contracts with clear performance criteria for the support phase</li>
+            <li>A risk register and escalation playbook for future use</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- CASE STUDY 2: Banking Transformation        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="case-card" data-tags="program transformation banking">
+    <div class="case-header">
+      <div>
+        <div class="case-tag-row">
+          <span class="case-tag ct-sector">Financial Markets</span>
+          <span class="case-tag ct-service">Program Management</span>
+          <span class="case-tag ct-service">Business Change</span>
+          <span class="case-tag ct-outcome">$22M cost avoidance</span>
+        </div>
+        <div class="case-title">Financial Markets Division Banking Transformation</div>
+        <div class="case-subtitle">End-to-end technology and operating model transformation for the Financial Markets division of a top-tier Australian bank — the largest single program of its kind in the institution's history.</div>
+      </div>
+      <div class="case-metrics">
+        <div class="case-metric">
+          <div class="case-metric-val">$150M<span>+</span></div>
+          <div class="case-metric-label">Program value</div>
+        </div>
+        <div class="case-metric" style="margin-top:4px">
+          <div class="case-metric-val">100<span>+</span></div>
+          <div class="case-metric-label">FTEs managed</div>
+        </div>
+        <div class="case-metric" style="margin-top:4px">
+          <div class="case-metric-val">36<span>mo</span></div>
+          <div class="case-metric-label">Duration</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-body">
+      <div class="case-col">
+        <div class="case-col-label">The challenge</div>
+        <h4>A $150M program with no clear owner and mounting political complexity</h4>
+        <p>The Financial Markets division had approved a landmark transformation — replacing core banking infrastructure, consolidating three legacy systems into one, and re-platforming the division's risk and reporting stack. The scale was unprecedented for the institution.</p>
+        <p style="margin-top:10px">Twelve months in, the program had consumed 40% of budget and delivered less than 15% of scope. Multiple vendors, competing executive priorities, and a program structure that had grown organically without design were the core problems. The board had requested an independent review.</p>
+      </div>
+      <div class="case-col">
+        <div class="case-col-label">Our approach</div>
+        <h4>Recovery, restructure, and re-baseline</h4>
+        <p>Bharat was engaged as Program Director following the independent review. The first phase was diagnostic: mapping actual vs planned progress, identifying the true critical path, and assessing which vendor relationships were recoverable.</p>
+        <ul style="margin-top:10px">
+          <li>Full program re-baseline — scope, timeline and budget reset against what was actually achievable</li>
+          <li>Vendor rationalisation — one underperforming vendor replaced, two contracts renegotiated</li>
+          <li>Executive steering group restructured with clearer decision rights and fewer veto points</li>
+          <li>100-person team reorganised into six delivery squads, each with a single accountable lead</li>
+          <li>Fortnightly board reporting introduced with standardised cost, scope and risk metrics</li>
+        </ul>
+      </div>
+      <div class="case-col">
+        <div class="case-col-label">The outcome</div>
+        <h4>Program recovered and delivered — under the revised budget</h4>
+        <p>Following the recovery intervention, the program delivered all primary scope items against the re-baselined plan. The consolidated platform went live across the division on schedule, and the cost overrun was contained well below initial projections at the time of recovery engagement.</p>
+        <p style="margin-top:10px">The board attributed $22M in cost avoidance directly to the program restructure — savings from vendor renegotiation, avoided rework, and scope de-duplication identified during the diagnostic phase.</p>
+      </div>
+    </div>
+
+    <div class="case-results">
+      <div class="case-result"><div class="cr-val">$22M</div><div class="cr-label">Attributed cost avoidance</div></div>
+      <div class="case-result"><div class="cr-val">100%</div><div class="cr-label">Primary scope delivered</div></div>
+      <div class="case-result"><div class="cr-val">2</div><div class="cr-label">Vendor contracts renegotiated</div></div>
+      <div class="case-result"><div class="cr-val">6</div><div class="cr-label">Delivery squads restructured</div></div>
+    </div>
+
+    <div class="case-quote">
+      <div class="case-quote-mark">"</div>
+      <div>
+        <p class="case-quote-body">We had essentially written off the program as undeliverable. Bharat came in, made sense of what we had, and gave the board a credible path forward. The cost avoidance alone more than justified the engagement — many times over.</p>
+        <div class="case-quote-attr">
+          <strong>Executive Program Sponsor</strong>
+          Financial Markets Division · Leading Australian bank
+        </div>
+        <span class="case-quote-placeholder">⚠ Replace with verified client quote</span>
+      </div>
+    </div>
+
+    <div class="case-toggle" onclick="toggleDetail('cs2')">
+      <span class="case-toggle-label">Read full delivery detail</span>
+      <span class="case-toggle-icon" id="cs2-icon">▾</span>
+    </div>
+    <div class="case-detail" id="cs2-detail">
+      <div class="detail-grid">
+        <div>
+          <h5>The diagnostic phase in detail</h5>
+          <p>The first six weeks were spent on forensic analysis — not delivery. Bharat reviewed every vendor contract, every milestone record, every piece of documentation produced to date. The key finding: scope had been allowed to grow by approximately 35% through informal change requests that were never formally approved or costed. This alone explained most of the budget variance.</p>
+          <h5 style="margin-top:20px">How the re-baseline was negotiated</h5>
+          <ul>
+            <li>Scope categorised into three buckets: must-have (non-negotiable), should-have (included if time allows), and deferred (explicit out-of-scope)</li>
+            <li>Each must-have item independently estimated by a third party — not the incumbent vendors</li>
+            <li>Timeline rebuilt from the critical path up, not from the desired go-live date down</li>
+            <li>Budget re-presented to the board as a range with named assumptions, not a single number</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Vendor rationalisation</h5>
+          <p>One vendor was replaced after the diagnostic confirmed their delivery was structurally blocked — not by resourcing, but by an architectural decision made 18 months earlier that was incompatible with the target state. Two remaining vendors had their contracts renegotiated: fixed-fee components converted to milestone-based payments, and penalty clauses added for critical path delays.</p>
+          <h5 style="margin-top:20px">The $22M cost avoidance breakdown</h5>
+          <ul>
+            <li>$9M — vendor renegotiation and replacement cost savings</li>
+            <li>$7M — deferred scope items that were removed after business case re-evaluation</li>
+            <li>$4M — rework avoided by identifying integration defects in testing rather than production</li>
+            <li>$2M — procurement savings from consolidated vendor agreements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MINI CASES ROW -->
+  <div style="margin-top:8px">
+    <div class="section-heading">
+      <div class="sh-label">Further engagements</div>
+      <div class="sh-title">More programs, same standard of delivery</div>
+    </div>
+    <div class="mini-cases">
+
+      <!-- MINI CASE 3: Offshore Development -->
+      <div class="mini-card" data-tags="offshore fintech">
+        <div class="mini-header">
+          <div class="mini-tag-row">
+            <span class="case-tag ct-sector">Fintech</span>
+            <span class="case-tag ct-service">Offshore Development</span>
+          </div>
+          <div class="mini-title">Offshore Engineering Team for Payments Fintech</div>
+          <div class="mini-subtitle">Building and governing a dedicated 12-person offshore team for a Series B Australian payments company scaling its core platform.</div>
+        </div>
+        <div class="mini-body">
+          <div class="mini-col">
+            <div class="mini-col-label">Challenge</div>
+            <p>The client needed to double engineering capacity within 90 days to hit a regulatory compliance deadline — but couldn't hire fast enough onshore, and had no experience managing an offshore team.</p>
+          </div>
+          <div class="mini-col">
+            <div class="mini-col-label">What we did</div>
+            <p>Sourced, vetted and onboarded a 12-person dedicated team. Established governance, sprint cadence, and quality standards aligned to the client's existing engineering culture. Bharat remained accountable for team performance throughout.</p>
+          </div>
+        </div>
+        <div class="mini-results">
+          <div class="mini-result"><div class="mr-val">90 days</div><div class="mr-label">Full team operational</div></div>
+          <div class="mini-result"><div class="mr-val">47%</div><div class="mr-label">Cost vs onshore hire</div></div>
+          <div class="mini-result"><div class="mr-val">On time</div><div class="mr-label">Compliance deadline met</div></div>
+        </div>
+      </div>
+
+      <!-- MINI CASE 4: PMO Setup -->
+      <div class="mini-card" data-tags="program transformation banking">
+        <div class="mini-header">
+          <div class="mini-tag-row">
+            <span class="case-tag ct-sector">Wealth Management</span>
+            <span class="case-tag ct-service">PMO Setup</span>
+          </div>
+          <div class="mini-title">PMO Establishment &amp; Delivery Framework</div>
+          <div class="mini-subtitle">Designing and standing up a fit-for-purpose PMO for a wealth management firm managing a $40M multi-year technology uplift.</div>
+        </div>
+        <div class="mini-body">
+          <div class="mini-col">
+            <div class="mini-col-label">Challenge</div>
+            <p>The firm had approved a significant multi-year technology program but had no internal PMO capability and no delivery framework. Executive reporting was inconsistent and the board lacked visibility into actual program status.</p>
+          </div>
+          <div class="mini-col">
+            <div class="mini-col-label">What we did</div>
+            <p>Designed the PMO from scratch: governance structure, reporting templates, risk escalation framework, and vendor management process. Trained the internal team to run it independently within six months.</p>
+          </div>
+        </div>
+        <div class="mini-results">
+          <div class="mini-result"><div class="mr-val">6 weeks</div><div class="mr-label">PMO operational</div></div>
+          <div class="mini-result"><div class="mr-val">6 months</div><div class="mr-label">Client self-sufficient</div></div>
+          <div class="mini-result"><div class="mr-val">$40M</div><div class="mr-label">Program under governance</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /cases-wrapper -->
+
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Facing a similar challenge?</h2>
+  <p>Book a free 30-minute call with Bharat. Come with a problem — leave with a plan.</p>
+  <button class="btn-gold">Book a Discovery Call</button>
+  <button class="btn-outline">See our services →</button>
+  <div class="cta-sub">Or call directly: 0410 382 959 · consultme@bodhi.com.au</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">bodhi<span>.</span>consulting</div>
+      <p class="footer-brand-desc">Program management &amp; technology offshoring for financial services businesses that can't afford to get delivery wrong.</p>
+      <div class="footer-contact">
+        <a href="tel:0410382959">0410 382 959</a>
+        <a href="mailto:consultme@bohdi.com">consultme@bodhi.com.au</a>
+        <a href="https://www.linkedin.com/in/bharat-mistry-94b6ab7/">LinkedIn — Bharat Mistry</a>
+        <a href="#">Sydney, New South Wales, AU</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <a class="footer-link" href="#">Strategy &amp; Transformation</a>
+      <a class="footer-link" href="#">Offshore Development</a>
+      <a class="footer-link" href="#">Program Management</a>
+      <a class="footer-link" href="#">PMO as a Service</a>
+      <a class="footer-link" href="#">Staff Augmentation</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <a class="footer-link" href="#">About Bharat</a>
+      <a class="footer-link" href="#">Who we work with</a>
+      <a class="footer-link" href="bodhi_case_studies.html">Case Studies</a>
+      <a class="footer-link" href="#">Insights &amp; Articles</a>
+      <a class="footer-link" href="#">Book a Call</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <a class="footer-link" href="#">CTO Checklist (Free)</a>
+      <a class="footer-link" href="#">Offshore ROI Calculator</a>
+      <a class="footer-link" href="#">Program Health Check</a>
+      <a class="footer-link" href="#">LinkedIn Newsletter</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Bodhi Consulting Pty Ltd. Sydney, Australia.</span>
+    <span class="footer-copy">Privacy Policy · Terms of Service</span>
+  </div>
+</footer>
+
+<script>
+function toggleDetail(id) {
+  var detail = document.getElementById(id + '-detail');
+  var icon = document.getElementById(id + '-icon');
+  var isOpen = detail.classList.contains('open');
+  detail.classList.toggle('open', !isOpen);
+  icon.classList.toggle('open', !isOpen);
+  var toggle = icon.closest('.case-toggle');
+  toggle.querySelector('.case-toggle-label').textContent = isOpen ? 'Read full delivery detail' : 'Collapse detail';
+}
+
+function filterCases(tag, btn) {
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.case-card, .mini-card').forEach(function(card) {
+    if (tag === 'all') {
+      card.style.display = '';
+    } else {
+      var tags = (card.getAttribute('data-tags') || '').split(' ');
+      card.style.display = tags.indexOf(tag) > -1 ? '' : 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
