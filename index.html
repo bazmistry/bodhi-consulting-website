@@ -1,0 +1,793 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Program Management Consulting Sydney | Bodhi Consulting</title>
+  <meta name="description" content="Bodhi Consulting delivers IT program management, offshore development and technology transformation for financial services businesses in Sydney and Australia. 25+ years experience. Book a free discovery call.">
+  <meta name="keywords" content="IT program management consulting Sydney, program management consultant Australia, offshore software development team Australia, technology transformation financial services, PMO consultant Sydney, banking transformation Australia">
+  <link rel="canonical" href="https://www.bodhiprojects.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IT Program Management Consulting Sydney | Bodhi Consulting">
+  <meta property="og:description" content="Senior IT program management, offshore development and technology transformation for financial services. 25+ years experience. $150M+ programs delivered.">
+  <meta property="og:url" content="https://www.bodhiprojects.com/">
+  <meta property="og:site_name" content="Bodhi Consulting">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IT Program Management Consulting Sydney | Bodhi Consulting">
+  <meta name="twitter:description" content="Senior IT program management, offshore development and technology transformation for financial services businesses in Australia.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Bodhi Consulting",
+    "description": "IT program management consulting, offshore software development, and technology transformation for financial services businesses in Australia.",
+    "url": "https://www.bodhiprojects.com",
+    "telephone": "+61410382959",
+    "email": "consultme@bohdi.com",
+    "address": {"@type":"PostalAddress","addressLocality":"Sydney","addressRegion":"New South Wales","addressCountry":"AU"},
+    "areaServed": ["Sydney","Australia"],
+    "serviceType": ["IT Program Management","Offshore Software Development","Technology Transformation","PMO Consulting","Financial Services IT Consulting"],
+    "founder": {"@type":"Person","name":"Bharat Mistry","jobTitle":"Founder & Principal Consultant"}
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1c2433;
+    --ink2: #263041;
+    --gold: #f59820;
+    --gold-lt: #faa832;
+    --off: #f4f2ee;
+    --off2: #eceae4;
+    --white: #ffffff;
+    --muted: #72788a;
+    --border: #e0ddd8;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; background: var(--white); color: var(--ink); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; line-height: 1.1; }
+  a { text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  
+  /* ─── NAV ─── */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 56px; height: 64px;
+    background: rgba(28,36,51,0.97); backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px; font-weight: 400; letter-spacing: 0.5px;
+    color: #fff;
+  }
+  .nav-logo b { color: var(--gold); font-weight: 400; }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a { font-size: 13px; font-weight: 400; color: rgba(255,255,255,0.5); letter-spacing: 0.3px; transition: color 0.2s; }
+  .nav-links a:hover { color: #fff; }
+  .nav-book {
+    font-size: 12px; font-weight: 500; letter-spacing: 0.8px; text-transform: uppercase;
+    color: var(--gold); border: 1px solid rgba(245,152,32,0.4);
+    padding: 8px 20px; border-radius: 2px; transition: all 0.2s;
+  }
+  .nav-book:hover { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+  
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--ink);
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 56px 80px;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg-line {
+    position: absolute; top: 0; right: 120px; bottom: 0;
+    width: 1px; background: rgba(255,255,255,0.04);
+  }
+  .hero-bg-line2 {
+    position: absolute; top: 0; right: 360px; bottom: 0;
+    width: 1px; background: rgba(255,255,255,0.03);
+  }
+  .hero-circle {
+    position: absolute; right: -180px; top: 50%; transform: translateY(-50%);
+    width: 560px; height: 560px;
+    border: 1px solid rgba(245,152,32,0.07); border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero-circle2 {
+    position: absolute; right: -80px; top: 50%; transform: translateY(-50%);
+    width: 320px; height: 320px;
+    border: 1px solid rgba(245,152,32,0.05); border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero-content { position: relative; max-width: 720px; }
+  .hero-label {
+    font-size: 11px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 28px; display: flex; align-items: center; gap: 12px;
+  }
+  .hero-label::before { content: ''; width: 28px; height: 1px; background: var(--gold); opacity: 0.5; }
+  .hero h1 {
+    font-size: clamp(48px, 6vw, 80px);
+    color: #fff; font-weight: 300; letter-spacing: -1px;
+    margin-bottom: 28px; line-height: 1.05;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-lt); }
+  .hero-desc {
+    font-size: 16px; color: rgba(255,255,255,0.45);
+    max-width: 480px; line-height: 1.75; margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .hero-actions { display: flex; gap: 16px; align-items: center; margin-bottom: 72px; }
+  .btn-primary {
+    background: var(--gold); color: var(--ink);
+    font-size: 12px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;
+    padding: 14px 32px; border-radius: 2px; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; transition: background 0.2s;
+  }
+  .btn-primary:hover { background: var(--gold-lt); }
+  .btn-secondary {
+    font-size: 13px; color: rgba(255,255,255,0.45);
+    display: flex; align-items: center; gap: 8px; transition: color 0.2s;
+    background: none; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .btn-secondary:hover { color: rgba(255,255,255,0.8); }
+  .btn-secondary::after { content: '→'; transition: transform 0.2s; }
+  .btn-secondary:hover::after { transform: translateX(4px); }
+  .hero-stats {
+    display: flex; gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding-top: 32px;
+  }
+  .hstat {
+    padding: 0 48px 0 0; margin-right: 48px;
+    border-right: 1px solid rgba(255,255,255,0.07);
+  }
+  .hstat:last-child { border-right: none; }
+  .hstat-n {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px; font-weight: 300; color: #fff; line-height: 1;
+  }
+  .hstat-n span { color: var(--gold); }
+  .hstat-l { font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 4px; letter-spacing: 0.3px; }
+  
+  /* ─── CLIENT BAR ─── */
+  .clients-bar {
+    background: var(--off); padding: 20px 56px;
+    display: flex; align-items: center; gap: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .clients-bar-label {
+    font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
+    color: #aaa; white-space: nowrap; flex-shrink: 0;
+  }
+  .clients-bar-names {
+    display: flex; gap: 0; flex-wrap: wrap;
+  }
+  .clients-bar-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 17px; font-weight: 400; color: #888;
+    padding: 0 24px; border-right: 1px solid var(--border);
+    transition: color 0.2s;
+  }
+  .clients-bar-name:first-child { padding-left: 0; }
+  .clients-bar-name:last-child { border-right: none; }
+  .clients-bar-name:hover { color: var(--ink); }
+  
+  /* ─── SECTION BASE ─── */
+  .section { padding: 96px 56px; }
+  .section-white { background: var(--white); }
+  .section-off { background: var(--off); }
+  .section-ink { background: var(--ink); }
+  .eyebrow {
+    font-size: 10px; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px; display: flex; align-items: center; gap: 12px;
+  }
+  .eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--gold); opacity: 0.6; }
+  .section-title { font-size: clamp(32px, 3.5vw, 48px); color: var(--ink); margin-bottom: 16px; font-weight: 300; }
+  .section-title-light { color: #fff; }
+  .section-desc { font-size: 15px; color: var(--muted); max-width: 480px; line-height: 1.8; margin-bottom: 56px; font-weight: 300; }
+  .section-desc-light { color: rgba(255,255,255,0.45); }
+  
+  /* ─── PHILOSOPHY ─── */
+  .philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .philosophy-statement {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 3vw, 42px); font-weight: 300;
+    color: var(--ink); line-height: 1.2; margin-bottom: 24px;
+  }
+  .philosophy-statement em { font-style: italic; color: var(--gold); }
+  .philosophy-body { font-size: 15px; color: var(--muted); line-height: 1.8; font-weight: 300; }
+  .pillars { display: flex; flex-direction: column; gap: 0; }
+  .pillar {
+    padding: 20px 0; border-bottom: 1px solid var(--border);
+    display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: start;
+  }
+  .pillar:first-child { border-top: 1px solid var(--border); }
+  .pillar-title { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 3px; }
+  .pillar-desc { font-size: 13px; color: var(--muted); font-weight: 300; }
+  .pillar-num { font-family: 'DM Serif Display', serif; font-size: 13px; color: var(--gold); opacity: 0.6; margin-top: 2px; }
+  
+  /* ─── SERVICES ─── */
+  .services-list { display: flex; flex-direction: column; gap: 0; }
+  .svc {
+    display: grid; grid-template-columns: 80px 1fr 1fr auto;
+    gap: 40px; align-items: start;
+    padding: 40px 0; border-bottom: 1px solid var(--border);
+    transition: background 0.2s;
+  }
+  .svc:first-child { border-top: 1px solid var(--border); }
+  .svc-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 13px; color: var(--gold); opacity: 0.7; padding-top: 3px;
+    letter-spacing: 1px;
+  }
+  .svc-name { font-family: 'DM Serif Display', serif; font-size: 26px; font-weight: 400; color: var(--ink); line-height: 1.2; }
+  .svc-desc { font-size: 14px; color: var(--muted); line-height: 1.75; font-weight: 300; }
+  .svc-outcome {
+    font-size: 12px; color: var(--gold);
+    font-weight: 500; text-align: right; padding-top: 4px; white-space: nowrap;
+  }
+  .svc:hover .svc-name { color: var(--gold); }
+  
+  /* ─── NUMBERS ─── */
+  .numbers-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: rgba(255,255,255,0.08); }
+  .number-cell {
+    background: var(--ink); padding: 48px 40px;
+  }
+  .number-val {
+    font-family: 'DM Serif Display', serif;
+    font-size: 56px; font-weight: 300; color: #fff; line-height: 1; margin-bottom: 10px;
+  }
+  .number-val span { color: var(--gold); font-size: 32px; }
+  .number-label { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.5; font-weight: 300; }
+  .number-label strong { display: block; color: rgba(255,255,255,0.7); font-weight: 400; margin-bottom: 2px; font-size: 14px; }
+  
+  /* ─── QUOTE ─── */
+  .quote-block {
+    padding: 72px 56px;
+    background: var(--ink2);
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .quote-mark {
+    font-family: 'DM Serif Display', serif;
+    font-size: 96px; line-height: 0.7;
+    color: var(--gold); opacity: 0.2; margin-bottom: 8px;
+  }
+  .quote-text {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(20px, 2.5vw, 30px); font-weight: 300; font-style: italic;
+    color: rgba(255,255,255,0.8); line-height: 1.5;
+    max-width: 760px; margin-bottom: 28px;
+  }
+  .quote-attr { font-size: 13px; color: rgba(255,255,255,0.35); }
+  .quote-attr strong { color: rgba(255,255,255,0.6); font-weight: 400; }
+  .quote-placeholder {
+    display: inline-block; margin-top: 12px;
+    font-size: 11px; color: rgba(245,152,32,0.5);
+    border: 1px dashed rgba(245,152,32,0.3); border-radius: 2px; padding: 3px 10px;
+  }
+  
+  /* ─── ROI CALCULATOR ─── */
+  .roi-section { background: var(--off); }
+  .roi-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .roi-intro { }
+  .roi-tool {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px; padding: 36px;
+  }
+  .roi-tool-title { font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px; }
+  .roi-row { margin-bottom: 20px; }
+  .roi-lbl { font-size: 12px; color: var(--muted); margin-bottom: 6px; display: flex; justify-content: space-between; }
+  .roi-lbl span { color: var(--ink); font-weight: 500; }
+  input[type=range] { width: 100%; accent-color: var(--gold); }
+  .roi-divider { height: 1px; background: var(--border); margin: 24px 0; }
+  .roi-result { display: flex; justify-content: space-between; margin-bottom: 10px; }
+  .roi-result-label { font-size: 13px; color: var(--muted); }
+  .roi-result-val { font-size: 13px; color: var(--ink); font-weight: 500; }
+  .roi-total {
+    background: var(--ink); border-radius: 3px; padding: 18px 20px;
+    display: flex; justify-content: space-between; align-items: center; margin-top: 20px;
+  }
+  .roi-total-label { font-size: 12px; color: var(--gold); font-weight: 500; letter-spacing: 0.5px; }
+  .roi-total-val { font-family: 'DM Serif Display', serif; font-size: 36px; font-weight: 300; color: var(--gold); }
+  .roi-note { font-size: 11px; color: var(--muted); text-align: center; margin-top: 14px; }
+  
+  /* ─── CLIENTS ─── */
+  .clients-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 1px; background: var(--border); margin-top: 48px; }
+  .client-cell {
+    background: var(--white); padding: 32px 24px;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 8px;
+    transition: background 0.2s;
+  }
+  .client-cell:hover { background: var(--off); }
+  .client-name-lg {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px; font-weight: 400; color: var(--ink); line-height: 1.2;
+  }
+  .client-sector-sm { font-size: 11px; color: var(--muted); letter-spacing: 0.5px; }
+  .client-work { font-size: 12px; color: var(--muted); line-height: 1.5; font-weight: 300; margin-top: 4px; }
+  .clients-note-sm { font-size: 12px; color: var(--muted); margin-top: 20px; font-style: italic; text-align: center; }
+  
+  /* ─── FOUNDER ─── */
+  .founder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .founder-photo-area {
+    background: var(--ink2); border-radius: 3px; aspect-ratio: 4/5;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(245,152,32,0.15); position: relative; overflow: hidden;
+  }
+  .founder-initials-display {
+    font-family: 'DM Serif Display', serif;
+    font-size: 96px; font-weight: 300; color: var(--gold); opacity: 0.15;
+  }
+  .founder-photo-note {
+    position: absolute; bottom: 16px; left: 0; right: 0;
+    text-align: center; font-size: 11px; color: rgba(245,152,32,0.4); padding: 0 20px;
+  }
+  .founder-name { font-size: 36px; font-weight: 300; color: var(--ink); margin-bottom: 4px; }
+  .founder-title { font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; }
+  .founder-bio { font-size: 15px; color: var(--muted); line-height: 1.8; font-weight: 300; margin-bottom: 32px; }
+  .creds-list { display: flex; flex-direction: column; gap: 0; margin-bottom: 28px; }
+  .cred-item { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--muted); display: flex; gap: 12px; align-items: flex-start; }
+  .cred-item:first-child { border-top: 1px solid var(--border); }
+  .cred-dot { width: 4px; height: 4px; background: var(--gold); border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+  .linkedin-link { font-size: 13px; color: var(--gold); display: inline-flex; align-items: center; gap: 6px; }
+  .linkedin-link:hover { color: var(--gold-lt); }
+  
+  /* ─── INSIGHTS ─── */
+  .insights-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); margin-top: 48px; }
+  .insight-card {
+    background: var(--white); padding: 32px 28px;
+    display: flex; flex-direction: column; gap: 12px;
+    transition: background 0.15s; cursor: pointer;
+  }
+  .insight-card:hover { background: var(--off); }
+  .insight-tag { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); }
+  .insight-title { font-family: 'DM Serif Display', serif; font-size: 22px; font-weight: 400; color: var(--ink); line-height: 1.25; }
+  .insight-excerpt { font-size: 13px; color: var(--muted); line-height: 1.65; font-weight: 300; flex: 1; }
+  .insight-meta { font-size: 12px; color: #bbb; display: flex; justify-content: space-between; margin-top: 8px; }
+  .insight-read { color: var(--gold); font-weight: 500; }
+  
+  /* ─── LEAD MAGNET ─── */
+  .lm-block {
+    background: var(--ink); border-radius: 4px;
+    display: grid; grid-template-columns: 1fr 340px; overflow: hidden;
+  }
+  .lm-left { padding: 48px 52px; }
+  .lm-tag { font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+  .lm-title { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 300; color: #fff; line-height: 1.2; margin-bottom: 14px; }
+  .lm-desc { font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.7; font-weight: 300; margin-bottom: 24px; }
+  .lm-checks { display: flex; flex-direction: column; gap: 8px; }
+  .lm-check { font-size: 13px; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 10px; }
+  .lm-check::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+  .lm-right {
+    background: rgba(255,255,255,0.04); border-left: 1px solid rgba(255,255,255,0.06);
+    padding: 48px 36px; display: flex; flex-direction: column; gap: 12px; justify-content: center;
+  }
+  .lm-input {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 2px; padding: 12px 14px; font-size: 14px; color: #fff;
+    font-family: 'DM Sans', sans-serif; width: 100%; outline: none; transition: border-color 0.15s;
+  }
+  .lm-input::placeholder { color: rgba(255,255,255,0.25); }
+  .lm-input:focus { border-color: rgba(245,152,32,0.4); }
+  .lm-submit {
+    background: var(--gold); color: var(--ink); border: none;
+    padding: 13px; font-size: 13px; font-weight: 500; letter-spacing: 0.5px;
+    border-radius: 2px; cursor: pointer; font-family: 'DM Sans', sans-serif;
+    transition: background 0.15s;
+  }
+  .lm-submit:hover { background: var(--gold-lt); }
+  .lm-privacy { font-size: 11px; color: rgba(255,255,255,0.2); text-align: center; }
+  
+  /* ─── CTA ─── */
+  .cta-block {
+    background: var(--ink); padding: 112px 56px;
+    display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center;
+  }
+  .cta-text h2 { font-size: clamp(36px, 4vw, 54px); font-weight: 300; color: #fff; margin-bottom: 12px; }
+  .cta-text p { font-size: 15px; color: rgba(255,255,255,0.4); font-weight: 300; }
+  .cta-actions { display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+  .cta-actions .btn-primary { font-size: 12px; padding: 16px 36px; white-space: nowrap; }
+  .cta-sub { font-size: 12px; color: rgba(255,255,255,0.25); text-align: right; }
+  
+  /* ─── FOOTER ─── */
+  .footer { background: #111825; padding: 64px 56px 40px; }
+  .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .footer-brand { font-family: 'DM Serif Display', serif; font-size: 20px; font-weight: 300; color: #fff; margin-bottom: 12px; }
+  .footer-brand b { color: var(--gold); font-weight: 300; }
+  .footer-tagline { font-size: 13px; color: rgba(255,255,255,0.25); line-height: 1.7; margin-bottom: 24px; font-weight: 300; }
+  .footer-contact a { display: block; font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 6px; transition: color 0.15s; }
+  .footer-contact a:hover { color: var(--gold); }
+  .footer-col-title { font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.2); margin-bottom: 18px; }
+  .footer-link { display: block; font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 10px; transition: color 0.15s; font-weight: 300; }
+  .footer-link:hover { color: rgba(255,255,255,0.7); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.15); }
+  </style>
+  </head>
+  <body>
+  
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">bodhi<b>.</b>consulting</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#clients">Who we help</a></li>
+      <li><a href="/bodhi_case_studies.html">Case Studies</a></li>
+      <li><a href="/bodhi_article_offshore_cost.html">Insights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:consultme@bodhi.com.au" class="nav-book">Book a Call</a>
+  </nav>
+  
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-line"></div>
+    <div class="hero-bg-line2"></div>
+    <div class="hero-circle"></div>
+    <div class="hero-circle2"></div>
+    <div class="hero-content">
+      <div class="hero-label">Financial Services &amp; Fintech · Sydney, Australia</div>
+      <h1>Program delivery<br/><em>done right.</em></h1>
+      <p class="hero-desc">Senior IT program management, offshore development and technology transformation — delivered with the rigour your organisation demands.</p>
+      <div class="hero-actions">
+        <a href="mailto:consultme@bodhi.com.au" class="btn-primary" style="display:inline-block;text-decoration:none">Book a Discovery Call</a>
+        <a href="#services" class="btn-secondary" style="display:inline-flex;text-decoration:none">See how it works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-n">$150M<span>+</span></div>
+          <div class="hstat-l">Largest program delivered</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">25<span>+</span></div>
+          <div class="hstat-l">Years experience</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">37<span>+</span></div>
+          <div class="hstat-l">Projects completed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CLIENT BAR -->
+  <div class="clients-bar">
+    <span class="clients-bar-label">Delivered for</span>
+    <div class="clients-bar-names">
+      <span class="clients-bar-name">Commonwealth Bank</span>
+      <span class="clients-bar-name">Westpac</span>
+      <span class="clients-bar-name">AngleAuto</span>
+      <span class="clients-bar-name">Nissan</span>
+      <span class="clients-bar-name">Keppel · Singapore</span>
+    </div>
+  </div>
+  
+  <!-- PHILOSOPHY -->
+  <section class="section section-white">
+    <div class="eyebrow">Our philosophy</div>
+    <div class="philosophy-grid">
+      <div>
+        <div class="philosophy-statement">
+          Most IT projects don't fail<br/>because of technology.<br/><em>They fail because of people.</em>
+        </div>
+        <p class="philosophy-body">Weak governance, unclear scope, and teams that can't hold a program together under pressure. Bodhi exists to eliminate that risk — giving your leadership team the confidence that delivery will happen. On time. On budget.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div>
+            <div class="pillar-title">Commercial accountability</div>
+            <div class="pillar-desc">We tie every engagement to business outcomes — not hours billed</div>
+          </div>
+          <div class="pillar-num">01</div>
+        </div>
+        <div class="pillar">
+          <div>
+            <div class="pillar-title">Senior-only delivery</div>
+            <div class="pillar-desc">Bharat personally leads every engagement — no junior handoffs</div>
+          </div>
+          <div class="pillar-num">02</div>
+        </div>
+        <div class="pillar">
+          <div>
+            <div class="pillar-title">Transparent governance</div>
+            <div class="pillar-desc">You see scope, risks and costs before they become problems</div>
+          </div>
+          <div class="pillar-num">03</div>
+        </div>
+        <div class="pillar">
+          <div>
+            <div class="pillar-title">Long-term partnership</div>
+            <div class="pillar-desc">We measure success by your resilience after we leave</div>
+          </div>
+          <div class="pillar-num">04</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- SERVICES -->
+  <section id="services" class="section section-off">
+    <div class="eyebrow">What we do</div>
+    <h2 class="section-title">Three ways we deliver</h2>
+    <div class="services-list">
+      <div class="svc">
+        <div class="svc-num">01</div>
+        <div class="svc-name">Strategy &amp;<br/>Transformation</div>
+        <div class="svc-desc">Commercially grounded IT roadmaps — from business case to board presentation. We help leadership teams make the right technology bets at the right time. IT Roadmapping · Business Case · Change Management</div>
+        <div class="svc-outcome">Board-ready strategy<br/>in 6–8 weeks</div>
+      </div>
+      <div class="svc">
+        <div class="svc-num">02</div>
+        <div class="svc-name">Offshore<br/>Development</div>
+        <div class="svc-desc">Senior engineering talent, sourced, vetted and governed by us. Dedicated teams or staff augmentation — aligned to your delivery standards, time zone, and culture. Dedicated Teams · Staff Augmentation · End-to-end</div>
+        <div class="svc-outcome">40–60% cost reduction<br/>vs Australian hire</div>
+      </div>
+      <div class="svc">
+        <div class="svc-num">03</div>
+        <div class="svc-name">Program<br/>Management</div>
+        <div class="svc-desc">Embed a senior delivery expert when the stakes are high. We take full accountability for scope, risk, timeline and stakeholder communication. PMO Setup · Governance · Risk Management</div>
+        <div class="svc-outcome">Program back on track<br/>within 30 days</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- NUMBERS -->
+  <section class="section-ink">
+    <div class="numbers-grid">
+      <div class="number-cell">
+        <div class="number-val">$150M<span>+</span></div>
+        <div class="number-label"><strong>Largest program directed</strong>Banking transformation, leading Australian financial institution</div>
+      </div>
+      <div class="number-cell">
+        <div class="number-val">100<span>+</span></div>
+        <div class="number-label"><strong>FTEs managed simultaneously</strong>Cross-functional teams across AU, UK &amp; US markets</div>
+      </div>
+      <div class="number-cell">
+        <div class="number-val">37<span>+</span></div>
+        <div class="number-label"><strong>Projects delivered</strong>On time and within budget across fintech, banking &amp; insurance</div>
+      </div>
+      <div class="number-cell">
+        <div class="number-val">3</div>
+        <div class="number-label"><strong>Global markets</strong>Sydney · London · New York</div>
+      </div>
+    </div>
+    <div class="quote-block">
+      <div class="quote-mark">"</div>
+      <p class="quote-text">Bharat brought a level of governance rigour to our FX modernisation that we simply hadn't experienced before. On time, within budget — and the framework he built is still running today.</p>
+      <div class="quote-attr">
+        <strong>Chief Technology Officer</strong> — Australia's largest retail bank · Program value AU$80M
+      </div>
+      <span class="quote-placeholder">⚠ Replace with a verified client quote</span>
+    </div>
+  </section>
+  
+  <!-- ROI CALCULATOR -->
+  <section id="roi" class="section roi-section">
+    <div class="roi-inner">
+      <div class="roi-intro">
+        <div class="eyebrow">Offshore ROI</div>
+        <h2 class="section-title">See what offshore development could save you</h2>
+        <p class="section-desc">Most cost comparisons stop at salary. When you add recruitment, superannuation, attrition and office space, the true gap is closer to 3.5× — not 2×.</p>
+        <a href="/bodhi_article_offshore_cost.html" style="font-size:13px;color:var(--gold);display:inline-flex;align-items:center;gap:6px;">Read the full cost breakdown →</a>
+      </div>
+      <div class="roi-tool">
+        <div class="roi-tool-title">Offshore Cost Estimator</div>
+        <div class="roi-row">
+          <div class="roi-lbl">Team size <span id="ts-val">5 developers</span></div>
+          <input type="range" min="1" max="20" value="5" id="team-size" oninput="calcRoi()">
+        </div>
+        <div class="roi-row">
+          <div class="roi-lbl">Avg AU salary / dev <span id="sal-val">$130k</span></div>
+          <input type="range" min="80" max="220" value="130" step="10" id="salary" oninput="calcRoi()">
+        </div>
+        <div class="roi-row">
+          <div class="roi-lbl">Project duration <span id="dur-val">12 months</span></div>
+          <input type="range" min="3" max="36" value="12" step="3" id="duration" oninput="calcRoi()">
+        </div>
+        <div class="roi-divider"></div>
+        <div class="roi-result"><span class="roi-result-label">AU in-house cost</span><span class="roi-result-val" id="au-cost">$650k</span></div>
+        <div class="roi-result"><span class="roi-result-label">Bodhi offshore cost</span><span class="roi-result-val" id="off-cost">$260k</span></div>
+        <div class="roi-result"><span class="roi-result-label">Total savings</span><span class="roi-result-val" id="savings">$390k</span></div>
+        <div class="roi-total">
+          <span class="roi-total-label">Estimated ROI</span>
+          <span class="roi-total-val" id="roi-pct">150%</span>
+        </div>
+        <div class="roi-note">Illustrative estimates. Book a call for a tailored analysis.</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CLIENTS -->
+  <section id="clients" class="section section-white">
+    <div class="eyebrow">Experience that speaks</div>
+    <h2 class="section-title">Organisations Bodhi Consulting has delivered for</h2>
+    <div class="clients-grid">
+      <div class="client-cell">
+        <div class="client-name-lg">Commonwealth<br/>Bank</div>
+        <div class="client-sector-sm">Retail Banking · Australia</div>
+        <div class="client-work">Global FX platform modernisation</div>
+      </div>
+      <div class="client-cell">
+        <div class="client-name-lg">Westpac</div>
+        <div class="client-sector-sm">Retail Banking · Australia</div>
+        <div class="client-work">Financial Markets banking transformation</div>
+      </div>
+      <div class="client-cell">
+        <div class="client-name-lg">AngleAuto</div>
+        <div class="client-sector-sm">Automotive Finance · Australia</div>
+        <div class="client-work">Technology program delivery &amp; systems integration</div>
+      </div>
+      <div class="client-cell">
+        <div class="client-name-lg">Nissan</div>
+        <div class="client-sector-sm">Automotive · Global</div>
+        <div class="client-work">Digital transformation &amp; platform delivery</div>
+      </div>
+      <div class="client-cell">
+        <div class="client-name-lg">Keppel</div>
+        <div class="client-sector-sm">Infrastructure · Singapore</div>
+        <div class="client-work">Technology strategy &amp; program governance</div>
+      </div>
+    </div>
+    <p class="clients-note-sm">Client work reflects engagements delivered by Bodhi Consulting and Bharat Mistry across a 25+ year career in IT program management.</p>
+  </section>
+  
+  <!-- FOUNDER -->
+  <section id="founder" class="section section-off">
+    <div class="eyebrow">The person behind the work</div>
+    <div class="founder-grid">
+      <div class="founder-photo-area">
+        <div class="founder-initials-display">BM</div>
+        <div class="founder-photo-note">Replace with professional headshot</div>
+      </div>
+      <div>
+        <h2 class="founder-name">Bharat Mistry</h2>
+        <div class="founder-title">Founder &amp; Principal Consultant</div>
+        <p class="founder-bio">With over 25 years spanning London, New York, and Sydney, Bharat has led technology programs for some of the world's most demanding organisations — including Commonwealth Bank, Westpac, Keppel, Nissan, and AngleAuto. His work spans the global FX modernisation of Australia's largest retail bank, a $150M Financial Markets division transformation, and complex program deliveries across three continents.</p>
+        <p class="founder-bio">He founded Bodhi to give ambitious businesses direct access to enterprise-calibre delivery expertise — without large firm overheads or junior account teams. Every engagement is led by Bharat personally.</p>
+        <div class="creds-list">
+          <div class="cred-item"><span class="cred-dot"></span>Led AU$150M banking transformation for top-tier Australian bank</div>
+          <div class="cred-item"><span class="cred-dot"></span>Global FX modernisation — Australia's largest retail bank</div>
+          <div class="cred-item"><span class="cred-dot"></span>25+ years across London, New York &amp; Sydney markets</div>
+          <div class="cred-item"><span class="cred-dot"></span>Managed cross-functional teams of 100+ FTEs</div>
+        </div>
+        <a href="https://www.linkedin.com/in/bharat-mistry-94b6ab7/" class="linkedin-link">View LinkedIn profile →</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- INSIGHTS -->
+  <section class="section section-white">
+    <div class="eyebrow">Insights</div>
+    <h2 class="section-title">Thinking from the field</h2>
+    <p class="section-desc">Practical articles for technology leaders — written from 37+ real programs, not textbooks.</p>
+    <div class="insights-grid">
+      <div class="insight-card" onclick="window.location='/bodhi_article_offshore_cost.html'">
+        <div class="insight-tag">Offshore Development · New</div>
+        <div class="insight-title">The Real Cost of Offshore vs In-House Developers in Australia (2025)</div>
+        <div class="insight-excerpt">Beyond salaries: when you factor in recruitment, onboarding and attrition, the true cost gap is often 3× in favour of a managed offshore model.</div>
+        <div class="insight-meta"><span>7 min read</span><span class="insight-read">Read →</span></div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Program Management · Most read</div>
+        <div class="insight-title">5 Warning Signs Your IT Project Needs a Dedicated Program Manager</div>
+        <div class="insight-excerpt">Scope creep, missed milestones, and steering committee fatigue are predictable failure patterns. A PM catches them before they start.</div>
+        <div class="insight-meta"><span>8 min read</span><span class="insight-read">Read →</span></div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-tag">Governance · Core</div>
+        <div class="insight-title">How to Set Up IT Program Governance That Works in Financial Services</div>
+        <div class="insight-excerpt">Most governance frameworks fail not because of the framework — but because accountability is diffused. Here's how to fix it in 30 days.</div>
+        <div class="insight-meta"><span>10 min read</span><span class="insight-read">Read →</span></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- LEAD MAGNET -->
+  <section id="lead-magnet" class="section section-off">
+    <div class="lm-block">
+      <div class="lm-left">
+        <div class="lm-tag">Free guide · 12 pages</div>
+        <div class="lm-title">The CTO's Checklist: 7 Questions to Ask Before Your Next IT Program</div>
+        <p class="lm-desc">A practical pre-flight checklist drawn from 37+ delivered programs. Covers governance, vendor selection, offshore readiness and risk identification.</p>
+        <div class="lm-checks">
+          <div class="lm-check">Governance structure before kickoff</div>
+          <div class="lm-check">Offshore readiness assessment framework</div>
+          <div class="lm-check">Red flags that predict cost overrun</div>
+          <div class="lm-check">Stakeholder communication template</div>
+        </div>
+      </div>
+      <div class="lm-right">
+        <input class="lm-input" type="text" placeholder="Your name">
+        <input class="lm-input" type="email" placeholder="Work email">
+        <input class="lm-input" type="text" placeholder="Company">
+        <button class="lm-submit">Download Free Guide →</button>
+        <div class="lm-privacy">No spam. Unsubscribe anytime.</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA -->
+  <div id="contact" class="cta-block">
+    <div class="cta-text">
+      <h2>Ready to deliver<br/><em style="font-style:italic;color:rgba(255,255,255,0.5)">with confidence?</em></h2>
+      <p>Book a free 30-minute call with Bharat.<br/>Come with a problem — leave with a plan.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="mailto:consultme@bodhi.com.au" class="btn-primary" style="display:inline-block;text-decoration:none">Book a Discovery Call</a>
+      <div class="cta-sub">0410 382 959 · consultme@bodhi.com.au</div>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">bodhi<b>.</b>consulting</div>
+        <p class="footer-tagline">Program management &amp; technology offshoring for financial services businesses that can't afford to get delivery wrong.</p>
+        <div class="footer-contact">
+          <a href="tel:0410382959">0410 382 959</a>
+          <a href="mailto:consultme@bodhi.com.au">consultme@bodhi.com.au</a>
+          <a href="https://www.linkedin.com/in/bharat-mistry-94b6ab7/">LinkedIn — Bharat Mistry</a>
+          <a href="#">Sydney, New South Wales, AU</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <a class="footer-link" href="#services">Strategy &amp; Transformation</a>
+        <a class="footer-link" href="#services">Offshore Development</a>
+        <a class="footer-link" href="#services">Program Management</a>
+        <a class="footer-link" href="#services">PMO as a Service</a>
+        <a class="footer-link" href="#services">Staff Augmentation</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <a class="footer-link" href="#founder">About Bharat</a>
+        <a class="footer-link" href="#clients">Who we work with</a>
+        <a class="footer-link" href="/bodhi_case_studies.html">Case Studies</a>
+        <a class="footer-link" href="/bodhi_article_offshore_cost.html">Insights</a>
+        <a class="footer-link" href="mailto:consultme@bodhi.com.au">Book a Call</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <a class="footer-link" href="#lead-magnet">CTO Checklist (Free)</a>
+        <a class="footer-link" href="#roi">Offshore ROI Calculator</a>
+        <a class="footer-link" href="mailto:consultme@bodhi.com.au">Program Health Check</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/bharat-mistry-94b6ab7/" target="_blank">LinkedIn Newsletter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Bodhi Consulting Pty Ltd. Sydney, Australia.</span>
+      <span class="footer-copy">Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+  
+  <script>
+  function fmt(n){
+    if(n>=1000000) return '$'+(n/1e6).toFixed(1)+'M';
+    if(n>=1000) return '$'+(n/1000).toFixed(0)+'k';
+    return '$'+n;
+  }
+  function calcRoi(){
+    var ts=parseInt(document.getElementById('team-size').value);
+    var sal=parseInt(document.getElementById('salary').value)*1000;
+    var dur=parseInt(document.getElementById('duration').value);
+    document.getElementById('ts-val').textContent=ts+' developer'+(ts>1?'s':'');
+    document.getElementById('sal-val').textContent='$'+(sal/1000)+'k';
+    document.getElementById('dur-val').textContent=dur+' month'+(dur>1?'s':'');
+    var au=Math.round(ts*sal*(dur/12));
+    var off=Math.round(au*0.40);
+    var sav=au-off;
+    var roi=Math.round((sav/off)*100);
+    document.getElementById('au-cost').textContent=fmt(au);
+    document.getElementById('off-cost').textContent=fmt(off);
+    document.getElementById('savings').textContent=fmt(sav);
+    document.getElementById('roi-pct').textContent=roi+'%';
+  }
+  calcRoi();
+  </script>
+  </body>
+  </html>
