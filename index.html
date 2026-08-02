@@ -743,10 +743,6 @@ input[type=range] { width: 100%; accent-color: var(--gold); }
           <a href="tel:0410382959" class="contact-detail-val">0410 382 959</a>
         </div>
         <div class="contact-detail-item">
-          <div class="contact-detail-label">Email</div>
-          <a href="mailto:consultme@bodhi.com.au" class="contact-detail-val">consultme@bodhi.com.au</a>
-        </div>
-        <div class="contact-detail-item">
           <div class="contact-detail-label">Location</div>
           <div class="contact-detail-val">Sydney, New South Wales, Australia</div>
         </div>
@@ -874,40 +870,30 @@ function calcRoi(){
 }
 calcRoi();
 
-async function submitForm(e) {
+function submitForm(e) {
   e.preventDefault();
-  var btn = document.querySelector('.form-submit');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
 
-  var data = {
-    name: document.getElementById('f-name').value,
-    company: document.getElementById('f-company').value,
-    email: document.getElementById('f-email').value,
-    phone: document.getElementById('f-phone').value,
-    service: document.getElementById('f-service').value,
-    message: document.getElementById('f-message').value
-  };
+  var name    = document.getElementById('f-name').value;
+  var company = document.getElementById('f-company').value;
+  var email   = document.getElementById('f-email').value;
+  var phone   = document.getElementById('f-phone').value;
+  var service = document.getElementById('f-service').value;
+  var message = document.getElementById('f-message').value;
 
-  try {
-    var res = await fetch('https://formspree.io/f/xwvgdlaq', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    if (res.ok) {
-      document.getElementById('contact-form').style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
-    } else {
-      btn.textContent = 'Send Message →';
-      btn.disabled = false;
-      alert('Something went wrong. Please email us directly at consultme@bodhi.com.au');
-    }
-  } catch(err) {
-    btn.textContent = 'Send Message →';
-    btn.disabled = false;
-    window.location.href = 'mailto:consultme@bodhi.com.au?subject=Discovery Call Request&body=Name: ' + data.name + '%0ACompany: ' + data.company + '%0AService: ' + data.service + '%0AMessage: ' + data.message;
-  }
+  var subject = encodeURIComponent('Discovery Call Request — ' + name);
+  var body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Company: ' + company + '\n' +
+    'Email: ' + email + '\n' +
+    'Phone: ' + phone + '\n' +
+    'Service: ' + service + '\n\n' +
+    'Message:\n' + message
+  );
+
+  window.location.href = 'mailto:consultme@bodhi.com.au?subject=' + subject + '&body=' + body;
+
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
 }
 </script>
 </body>
