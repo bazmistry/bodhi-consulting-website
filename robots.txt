@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block internal reference files from being indexed
+Disallow: /bodhi_seo_keyword_guide.html
+
+Sitemap: https://www.bodhiprojects.com/sitemap.xml
